@@ -1,0 +1,68 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    
+    background-size: cover;
+    
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color:white;
+    background-image: url(../tp2/OIP.jpeg);
+    background-size: cover;
+    background-position: center;
+    overflow: scroll;
+
+
+    
+}
+.navbar{
+
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 130px;
+    cursor: pointer;
+}
+  .navbar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 30 px;
+      padding: 10px;
+      position: relative;
+     
+  }  
+  .navbar ul li a {
+      text-decoration:none;
+      color:white;
+      font-size: 1.2rem;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .navbar ul li ::before{
+      content:"" ;
+      height: 3px;
+      width: 0%;
+      background: deepskyblue;
+      position: absolute;
+      left: 0;
+      bottom: -12px;
+      transition: 0.4s ease-out;
+
+  }
+.navbar ul li :hover::before {
+    width: 100%;
+}
+hr{
+    color: rgb(0, 0, 0);
+}
